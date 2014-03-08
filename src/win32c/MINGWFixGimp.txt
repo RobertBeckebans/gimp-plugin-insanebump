@@ -1,0 +1,163 @@
+This file is used by the CodeLite Version of this project:
+
+
+These are close but may be wrong.  Get the Dll from the Program Files/Gimp-2.0 directory
+Depends on if the source I have and the build for GIMP are identical.
+1) libatk-1.0.dll.a
+2) libpangowin32-1.0.dll.a
+3) libpangocairo-1.0.dll.a
+4) libpango-1.0.dll.a
+5) libcairo.dll.a
+6) libintl.dll.a
+
+These are correct:
+
+libgtkglext-win32-1.0.a
+libgdkglext-win32-1.0.a
+libgtk-win32-2.0-0g.lib
+libgdk-win32-2.0-0g.lib
+libgimp-2.0-0.dll
+libgimpmath-2.0-0.dll
+libgimpconfig-2.0-0.dll
+libgimpcolor-2.0-0.dll
+libgimpbase-2.0-0.dll
+libgimpui-2.0-0.dll
+libgimpwidgets-2.0-0.dll
+libglew32.dll.a
+libgobject-2.0-0g.lib
+libglib-2.0-0g.lib
+libgmodule-2.0-0g.lib
+libgthread-2.0-0g.lib
+libgdk_pixbuf-2.0-0g.lib
+libgio-2.0-0g.lib
+opengl32.lib
+glu32.lib
+
+
+These are unknown:
+
+libatk-1.0.dll.a
+libpangowin32-1.0.dll.a
+libpangocairo-1.0.dll.a
+libpango-1.0.dll.a
+libcairo.dll.a
+libintl.dll.a
+
+
+    <File Name="libgimpwidgets-2.0-0.def"/>
+    <File Name="libgimp-2.0-0.def"/>
+    <File Name="libgimpbase-2.0-0.def"/>
+    <File Name="libgimpcolor-2.0-0.def"/>
+    <File Name="libgimpconfig-2.0-0.def"/>
+    <File Name="libgimpmath-2.0-0.def"/>
+    <File Name="libgimpmodule-2.0-0.def"/>
+    <File Name="libgimpthumb-2.0-0.def"/>
+    <File Name="libgimpui-2.0-0.def"/>
+    <Command Enabled="yes">dlltool -d libgimp-2.0-0.def -D "C:\Program Files\GIMP-2.0\bin\libgimp-2.0-0.dll" -l "C:\gtk\lib\gimp-2.0\libgimp.dll.a"</Command>
+    <Command Enabled="yes">dlltool -d libgimpbase-2.0-0.def -D "C:\Program Files\GIMP-2.0\bin\libgimpbase-2.0-0.dll" -l "C:\gtk\lib\gimp-2.0\libgimpbase.dll.a"</Command>
+    <Command Enabled="yes">dlltool -d libgimpcolor-2.0-0.def -D "C:\Program Files\GIMP-2.0\bin\libgimpcolor-2.0-0.dll" -l "C:\gtk\lib\gimp-2.0\libgimpcolor.dll.a"</Command>
+    <Command Enabled="yes">dlltool -d libgimpconfig-2.0-0.def -D "C:\Program Files\GIMP-2.0\bin\libgimpconfig-2.0-0.dll" -l "C:\gtk\lib\gimp-2.0\libgimpconfig.dll.a"</Command>
+    <Command Enabled="yes">dlltool -d libgimpmath-2.0-0.def -D "C:\Program Files\GIMP-2.0\bin\libgimpmath-2.0-0.dll" -l "C:\gtk\lib\gimp-2.0\libgimpmath.dll.a"</Command>
+    <Command Enabled="yes">dlltool -d libgimpmodule-2.0-0.def -D "C:\Program Files\GIMP-2.0\bin\libgimpmodule-2.0-0.dll" -l "C:\gtk\lib\gimp-2.0\libgimpmodule.dll.a"</Command>
+    <Command Enabled="yes">dlltool -d libgimpthumb-2.0-0.def -D "C:\Program Files\GIMP-2.0\bin\libgimpthumb-2.0-0.dll" -l "C:\gtk\lib\gimp-2.0\libgimpthumb.dll.a"</Command>
+    <Command Enabled="yes">dlltool -d libgimpui-2.0-0.def -D "C:\Program Files\GIMP-2.0\bin\libgimpui-2.0-0.dll" -l "C:\gtk\lib\gimp-2.0\libgimpui.dll.a"</Command>
+    <Command Enabled="yes">dlltool -d libgimpwidgets-2.0-0.def -D "C:\Program Files\GIMP-2.0\bin\libgimpwidgets-2.0-0.dll" -l "C:\gtk\lib\gimp-2.0\libgimpwidgets.dll.a"</Command>    
+
+
+
+LIBS NOT USED BECAUSE OF LINK OPTIONS:
+
+libgimp.a
+libgimp.a
+libglib-2.0.dll.a
+
+
+NOT USED LIBS:
+
+opengl32.lib
+glu32.lib
+libgtk-win32-2.0-0g.lib
+libgdk-win32-2.0-0g.lib
+libatk-1.0.dll.a
+libpangowin32-1.0.dll.a
+libpangocairo-1.0.dll.a
+libpango-1.0.dll.a
+libcairo.dll.a
+libgimp2.lib
+libgimpmath2.lib
+libgimpconfig2.lib
+libgimpcolor2.lib
+libgimpbase2.lib
+libintl.dll.a
+libgimpwidgets2.lib
+libgimpui2.lib
+libglew32.dll.a
+libgtkglext-win32-1.0.dll.a
+libgdkglext-win32-1.0.dll.a
+libgobject-2.0-0g.lib
+libgmodule-2.0-0g.lib
+libgthread-2.0-0g.lib
+libgdk_pixbuf-2.0-0g.lib
+libgio-2.0-0g.lib
+
+=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_
+=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_
+=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_=-_
+
+
+Here are the actual project settings:
+
+Notes for post build:
+You must set these directories as they are on your computer.  Obviously you will not be user Derby Russell.
+
+Compile Options:
+
+Release:
+
+-O2;-Wall
+
+General Options:
+
+Output File: $(IntermediateDirectory)/$(ProjectName)
+Program: ./$(ProjectName)
+Working Directory: $(IntermediateDirectory)
+
+THE FOLLOWING APPLIES TO BOTH DEBUG AND RELEASE (unless specified as in POST BUILD):
+
+INCLUDES:
+
+.
+C:\gtk\include\cairo
+C:\gtk\lib\gtk-2.0\include
+C:\gtk\include\glib-2.0
+C:\gtk\include\atk-1.0
+C:\gtk\include\gtk-2.0
+C:\gtk\include
+C:\gtk\include\gdk-pixbuf-2.0
+C:\gtk\include\pango-1.0
+C:\gtk\lib\glib-2.0\include
+C:\gtk\include\freetype2
+C:\gtk\include\libpng14
+C:\gtk\include\gtkglext-1.0
+C:\gtk\lib\gtkglext-1.0\include
+C:\gtk\include\gimp-2.0
+C:\GtkGLExt\1.0\lib\gtkglext-1.0\include
+    
+LIB INCLUDES:
+
+C:/gtk/lib/gimp-2.0
+C:/gtk/lib
+C:/glew-1.10.0/lib
+
+LINK OPTIONS:
+
+-lgimp.dll -lglib-2.0.dll -lgdk-win32-2.0.dll -lgtk-win32-2.0.dll -lgobject-2.0.dll -lgimpui.dll -lgimpbase.dll -lgimpwidgets.dll -lintl.dll -mwindows
+
+POST BUILD:
+
+DEBUG:
+copy Debug\gimp_insanemap.exe "C:\Documents and Settings\Derby Russell\.gimp-2.6\plug-ins"
+
+RELEASE:
+copy Release\gimp_insanemap.exe "C:\Documents and Settings\Derby Russell\.gimp-2.6\plug-ins"
+

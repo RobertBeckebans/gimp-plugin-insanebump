@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="InsaneBump" InternalType="">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="src">
+    <File Name="scale.c"/>
+    <File Name="InsaneBump.c"/>
+    <File Name="interface.c"/>
+    <File Name="main.c"/>
+    <File Name="normalmap.c"/>
+    <File Name="PluginConnectors.c"/>
+    <File Name="preview_area.c"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="hdr">
+    <VirtualDirectory Name="objects">
+      <File Name="objects/torus.h"/>
+      <File Name="objects/cube.h"/>
+      <File Name="objects/quad.h"/>
+      <File Name="objects/sphere.h"/>
+      <File Name="objects/teapot.h"/>
+    </VirtualDirectory>
+    <File Name="plugin-intl.h"/>
+    <File Name="scale.h"/>
+    <File Name="InsaneBump.h"/>
+    <File Name="interface.h"/>
+    <File Name="main.h"/>
+    <File Name="PluginConnectors.h"/>
+    <File Name="win32c/config.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="text">
+    <File Name="win32c/MINGWFixGimp.txt"/>
+    <File Name="win32c/InsaneBump3.py"/>
+  </VirtualDirectory>
+  <Settings Type="Executable">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu gcc" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g -Wall" C_Options="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+        <IncludePath Value="C:/gtk/include/cairo"/>
+        <IncludePath Value="C:/gtk/lib/gtk-2.0/include"/>
+        <IncludePath Value="C:/gtk/include/glib-2.0"/>
+        <IncludePath Value="C:/gtk/include/atk-1.0"/>
+        <IncludePath Value="C:/gtk/include/gtk-2.0"/>
+        <IncludePath Value="C:/gtk/include"/>
+        <IncludePath Value="C:/gtk/include/gdk-pixbuf-2.0"/>
+        <IncludePath Value="C:/gtk/include/pango-1.0"/>
+        <IncludePath Value="C:/gtk/lib/glib-2.0/include"/>
+        <IncludePath Value="C:/gtk/include/freetype2"/>
+        <IncludePath Value="C:/gtk/include/libpng14"/>
+        <IncludePath Value="C:/gtk/include/gtkglext-1.0"/>
+        <IncludePath Value="C:/gtk/lib/gtkglext-1.0/include"/>
+        <IncludePath Value="C:/gtk/include/gimp-2.0"/>
+        <IncludePath Value="C:/GtkGLExt/1.0/lib/gtkglext-1.0/include"/>
+        <IncludePath Value="win32c"/>
+      </Compiler>
+      <Linker Options="-lgimp.dll -lglib-2.0.dll -lgdk-win32-2.0.dll -lgtk-win32-2.0.dll -lgobject-2.0.dll -lgimpui.dll -lgimpbase.dll -lgimpwidgets.dll -lintl.dll -mwindows" Required="yes">
+        <LibraryPath Value="."/>
+        <LibraryPath Value="C:/gtk/lib/gimp-2.0"/>
+        <LibraryPath Value="C:/gtk/lib"/>
+        <LibraryPath Value="C:/glew-1.10.0/lib"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName).exe" IntermediateDirectory="./Debug" Command="./$(ProjectName).exe" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu gcc" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-O2;-Wall" C_Options="-O2;-Wall" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+        <IncludePath Value="C:/gtk/include/cairo"/>
+        <IncludePath Value="C:/gtk/lib/gtk-2.0/include"/>
+        <IncludePath Value="C:/gtk/include/glib-2.0"/>
+        <IncludePath Value="C:/gtk/include/atk-1.0"/>
+        <IncludePath Value="C:/gtk/include/gtk-2.0"/>
+        <IncludePath Value="C:/gtk/include"/>
+        <IncludePath Value="C:/gtk/include/gdk-pixbuf-2.0"/>
+        <IncludePath Value="C:/gtk/include/pango-1.0"/>
+        <IncludePath Value="C:/gtk/lib/glib-2.0/include"/>
+        <IncludePath Value="C:/gtk/include/freetype2"/>
+        <IncludePath Value="C:/gtk/include/libpng14"/>
+        <IncludePath Value="C:/gtk/include/gtkglext-1.0"/>
+        <IncludePath Value="C:/gtk/lib/gtkglext-1.0/include"/>
+        <IncludePath Value="C:/gtk/include/gimp-2.0"/>
+        <IncludePath Value="C:/GtkGLExt/1.0/lib/gtkglext-1.0/include"/>
+        <IncludePath Value="win32c"/>
+      </Compiler>
+      <Linker Options="-lgimp.dll -lglib-2.0.dll -lgdk-win32-2.0.dll -lgtk-win32-2.0.dll -lgobject-2.0.dll -lgimpui.dll -lgimpbase.dll -lgimpwidgets.dll -lintl.dll -mwindows" Required="yes">
+        <LibraryPath Value="."/>
+        <LibraryPath Value="C:/gtk/lib/gimp-2.0"/>
+        <LibraryPath Value="C:/gtk/lib"/>
+        <LibraryPath Value="C:/glew-1.10.0/lib"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName).exe" IntermediateDirectory="./Release" Command="./$(ProjectName).exe" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>

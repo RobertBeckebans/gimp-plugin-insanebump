@@ -1,0 +1,1 @@
+./Release/scale.o ./Release/InsaneBump.o ./Release/interface.o ./Release/main.o ./Release/normalmap.o ./Release/PluginConnectors.o ./Release/preview_area.o
